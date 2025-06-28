@@ -1,20 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/jarvis-network.png" />
-    <link rel="stylesheet" href="style/main.css">
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Tutorial</title>
-</head>
-<header>
-    <h1>Menu Tutorial Ganti Nama Wifi Dan Password Wifi</h1>
-</header>
-<body>
-    <a href="f460-biru.html"><i>Tutorial ZTE F460 Biru</i></a>
-    <a href="f460-orange.html"><i>Tutorial ZTE F460 Orange</i></a>
-    <a href="F477V2.html"><i>Tutorial ZTE F477</i></a>
-    <a href="f650.html"><i>Tutorial ZTE F650 Hijau</i></a>
-    <a href="tp-link.html"><i>Tutorial TP-Link</i></a>
-</body>
+    <link rel="icon" href="img/jarvis-network.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #particles-js {
+        position: fixed;
+        inset: 0;
+        z-index: 0; /* BUKAN -1, agar canvas masih bisa menerima mouse events */
+        background: linear-gradient(
+          to right,
+          rgb(0, 255, 234),
+          rgb(38, 70, 250)
+        );
+      }
+
+      /* Pastikan konten di atas partikel */
+      main,
+      header,
+      footer {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <!-- particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <body
+    class="bg-gradient-to-r from-teal-300 to-blue-700 min-h-screen flex flex-col items-center justify-center text-gray-800"
+  >
+    <div id="particles-js"></div>
+
+    <header class="mb-8 text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2 font-serif">
+        Menu Tutorial Ganti Nama & Password Wi-Fi
+      </h1>
+      <p class="text-white text-lg font-serif">
+        Pilih Jenis Modem/Router Di Bawah Ini:
+      </p>
+    </header>
+
+    <main
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl px-4"
+    >
+      <a
+        href="f460-biru.html"
+        class="bg-white hover:bg-blue-100 text-blue-700 font-semibold py-4 px-6 rounded-xl shadow transition-all text-center"
+      >
+        ZTE F460 Biru
+      </a>
+      <a
+        href="f460-orange.html"
+        class="bg-white hover:bg-orange-100 text-orange-700 font-semibold py-4 px-6 rounded-xl shadow transition-all text-center"
+      >
+        ZTE F460 Orange
+      </a>
+      <a
+        href="F477V2.html"
+        class="bg-white hover:bg-pink-100 text-pink-700 font-semibold py-4 px-6 rounded-xl shadow transition-all text-center"
+      >
+        ZTE F477
+      </a>
+      <a
+        href="f650.html"
+        class="bg-white hover:bg-green-100 text-green-700 font-semibold py-4 px-6 rounded-xl shadow transition-all text-center"
+      >
+        ZTE F650 Hijau
+      </a>
+      <a
+        href="tp-link.html"
+        class="bg-white hover:bg-indigo-100 text-indigo-700 font-semibold py-4 px-6 rounded-xl shadow transition-all text-center"
+      >
+        TP-Link
+      </a>
+    </main>
+
+    <footer class="mt-12 text-sm text-white">
+      &copy; 2024 Jarvis Network. All rights reserved.
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        particlesJS("particles-js", {
+          particles: {
+            number: { value: 60, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5 },
+            size: { value: 3, random: true },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: { enable: true, speed: 4 },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: { enable: true, mode: "grab" },
+              onclick: { enable: true, mode: "push" },
+              resize: true,
+            },
+            modes: {
+              grab: { distance: 200, line_linked: { opacity: 1 } },
+              push: { particles_nb: 4 },
+            },
+          },
+          retina_detect: true,
+        });
+      });
+    </script>
+  </body>
 </html>
