@@ -4,137 +4,197 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Tutorial Mengganti Password Wi-Fi dan SSID</title>
+    <title>Tutorial Mengganti Password Wi-Fi dan SSID - Jarvis Network</title>
     <link rel="icon" href="img/jarvis-network.png" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            colors: { brand: { 50: '#f0fdfa', 100: '#ccfbf1', 500: '#14b8a6', 600: '#0d9488', 900: '#134e4a' } }
+          }
+        }
+      }
+    </script>
   </head>
-  <body
-    class="bg-gradient-to-br from-teal-200 to-blue-200 text-gray-800 font-sans"
-  >
-    <header class="bg-teal-600 text-white p-6 shadow-md">
-      <h1 class="text-2xl font-bold text-center">
-        Tutorial Mengganti Password Wi-Fi dan SSID
-      </h1>
+  <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+    
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-teal-400 via-cyan-600 to-blue-700 pt-16 pb-32 px-4 relative overflow-hidden shadow-lg">
+      <!-- Decorative background elements -->
+      <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white blur-3xl"></div>
+        <div class="absolute bottom-0 left-10 w-72 h-72 rounded-full bg-teal-300 blur-3xl"></div>
+      </div>
+      
+      <div class="max-w-3xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md text-white mb-6 shadow-xl border border-white/30">
+          <i class="fa-solid fa-wifi text-3xl"></i>
+        </div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4 drop-shadow-sm">
+          Panduan Ganti Password & SSID Wi-Fi
+        </h1>
+        <p class="text-teal-50 text-lg md:text-xl font-medium max-w-2xl mx-auto drop-shadow-sm">
+          Langkah mudah mengamankan jaringan internet Jarvis Network Anda pada perangkat TP-Link dengan memperbarui nama Wi-Fi dan kata sandi.
+        </p>
+      </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-8">
-      <section class="space-y-12">
-        <article>
-          <h2 class="text-xl font-semibold mb-2">Pendahuluan</h2>
-          <p>
-            Mengganti password Wi-Fi dan SSID secara berkala penting untuk
-            menjaga keamanan jaringan Anda. Dalam tutorial ini, Anda akan
-            belajar cara login ke modem, mengubah SSID (nama jaringan Wi-Fi),
-            serta mengganti password Wi-Fi Anda.
-          </p>
-        </article>
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-20 pb-20">
+      
+      <!-- Pendahuluan -->
+      <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 md:p-8 mb-8">
+        <h2 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-circle-info text-brand-500"></i> Pendahuluan
+        </h2>
+        <p class="text-slate-600 leading-relaxed text-justify">
+          Mengganti password Wi-Fi dan SSID secara berkala penting untuk menjaga keamanan jaringan Anda. Dalam tutorial ini, Anda akan belajar cara login ke modem, mengubah SSID (nama jaringan Wi-Fi), serta mengganti password Wi-Fi Anda.
+        </p>
+      </div>
 
-        <article>
-          <h2 class="text-xl font-semibold mb-2">1. Login ke Modem/Router</h2>
-          <p>
-            Ikuti langkah-langkah berikut untuk login ke modem atau router Anda:
-          </p>
-          <ol class="list-decimal list-inside space-y-2 mt-2">
-            <li>
-              Buka browser Google Chrome dan ketik
-              <strong>192.168.0.1</strong> di address bar lalu klik
-              <strong>Search / Cari</strong>.
-            </li>
-            <img
-              src="img/bar-tplink.jpg"
-              alt="Tampilan Login Modem"
-              class="w-full rounded shadow"
-            />
-            <li>
-              <strong
-                >Setelah itu muncul tampilan login modem seperti di bawah
-                ini:</strong
-              >
-            </li>
-            <img
-              src="img/login-tplink.jpg"
-              alt="Tampilan Login Modem"
-              class="w-full rounded shadow"
-            />
-            <li>
-              Masukkan Password <strong>"admin123"</strong> lalu klik
-              <strong>"Login"</strong>.
-            </li>
-          </ol>
-        </article>
+      <!-- Langkah-langkah Container -->
+      <div class="space-y-8">
+        
+        <!-- Langkah 1 -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-black text-lg shrink-0">1</div>
+            <h2 class="text-xl md:text-2xl font-bold text-slate-800">Login ke Modem/Router</h2>
+          </div>
+          
+          <div class="space-y-6 pl-2 md:pl-14">
+            <div class="text-slate-600">
+              <p class="mb-3">Buka browser Google Chrome dan ketik IP Address berikut di <em>address bar</em>, lalu tekan <strong>Search / Cari</strong>.</p>
+              <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex items-center gap-3 w-fit font-mono font-bold text-brand-600">
+                <i class="fa-solid fa-globe text-slate-400"></i> 192.168.0.1
+              </div>
+            </div>
+            
+            <img src="img/bar-tplink.jpg" alt="Tampilan Address Bar" class="rounded-xl shadow-md border border-slate-200 w-full max-w-md" />
+            
+            <div class="text-slate-600">
+              <p class="mb-3">Setelah itu akan muncul tampilan login modem. Masukkan kata sandi administrator berikut:</p>
+              <ul class="list-disc list-inside space-y-1 ml-2 text-sm md:text-base bg-cyan-50/50 p-4 rounded-lg border border-cyan-100 w-fit">
+                <li>Password: <strong class="text-slate-900">admin123</strong></li>
+              </ul>
+              <p class="mt-3">Kemudian klik tombol <strong>Login</strong>.</p>
+            </div>
+            
+            <img src="img/login-tplink.jpg" alt="Tampilan Login Modem TP-Link" class="rounded-xl shadow-md border border-slate-200 w-full max-w-md" />
+          </div>
+        </section>
 
-        <article>
-          <h2 class="text-xl font-semibold mb-2">
-            2. Mengganti SSID (Nama Wi-Fi)
-          </h2>
-          <p>Setelah login, ikuti langkah-langkah ini:</p>
-          <ol class="list-decimal list-inside space-y-2 mt-2">
-            <li>Buka menu <strong>Wireless</strong> di sebelah kiri.</li>
-            <img
-              src="img/wireless.jpg"
-              alt="Pengaturan SSID"
-              class="w-full rounded shadow"
-            />
-            <li>Klik Menu <strong>Basic Settings</strong>.</li>
-            <li>
-              Temukan kolom <strong>Wireless Network Name</strong> dan ubah
-              namanya.
-            </li>
-            <li><strong>Contoh penggantian SSID:</strong></li>
-            <img
-              src="img/wlan-tplink.jpg"
-              alt="Pengaturan SSID"
-              class="w-full rounded shadow"
-            />
-            <li>Klik <strong>SAVE</strong> untuk menyimpan.</li>
-          </ol>
-        </article>
+        <!-- Langkah 2 -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-black text-lg shrink-0">2</div>
+            <h2 class="text-xl md:text-2xl font-bold text-slate-800">Mengganti SSID (Nama Wi-Fi)</h2>
+          </div>
+          
+          <div class="space-y-6 pl-2 md:pl-14">
+            <div class="text-slate-600 space-y-2">
+              <p>Setelah berhasil login, ikuti alur menu berikut:</p>
+              <ol class="list-decimal list-inside ml-2 font-medium">
+                <li>Buka menu <strong class="text-slate-900">Wireless</strong> di bilah sebelah kiri</li>
+                <li>Pilih submenu <strong class="text-slate-900">Basic Settings</strong></li>
+              </ol>
+            </div>
+            
+            <img src="img/wireless.jpg" alt="Menu Wireless TP-Link" class="rounded-xl shadow-md border border-slate-200 w-full max-w-md" />
+            
+            <div class="text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+              <p>Temukan kolom <strong>Wireless Network Name</strong> dan ubah namanya dengan nama Wi-Fi baru yang Anda inginkan.</p>
+            </div>
+            
+            <img src="img/wlan-tplink.jpg" alt="Contoh Pengisian SSID" class="rounded-xl shadow-md border border-slate-200 w-full max-w-md" />
+            
+            <p class="text-slate-600">Klik tombol <strong class="bg-slate-200 px-3 py-1.5 rounded text-slate-800 text-sm">SAVE</strong> di bagian bawah untuk menyimpan perubahan.</p>
+          </div>
+        </section>
 
-        <article>
-          <h2 class="text-xl font-semibold mb-2">
-            3. Mengganti Password Wi-Fi
-          </h2>
-          <p>Langkah-langkah mengganti password Wi-Fi:</p>
-          <ol class="list-decimal list-inside space-y-2 mt-2">
-            <li>Klik menu <strong>Wireless Security</strong>.</li>
-            <li>Ubah <strong>Wireless Password</strong> dengan yang baru.</li>
-            <li>Pilih enkripsi <strong>WPA2-PSK</strong>.</li>
-            <li><strong>Contoh pengaturan password:</strong></li>
-            <img
-              src="img/password-tplink.jpg"
-              alt="Pengaturan Password"
-              class="w-full rounded shadow"
-            />
-            <li>Klik <strong>SAVE</strong> untuk menyimpan.</li>
-          </ol>
-        </article>
+        <!-- Langkah 3 -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-black text-lg shrink-0">3</div>
+            <h2 class="text-xl md:text-2xl font-bold text-slate-800">Mengganti Password Wi-Fi</h2>
+          </div>
+          
+          <div class="space-y-6 pl-2 md:pl-14">
+            <div class="text-slate-600 space-y-3">
+              <p>Langkah-langkah mengganti password Wi-Fi:</p>
+              <ul class="list-disc list-inside space-y-2 ml-2">
+                <li>Klik menu <strong>Wireless Security</strong> di bilah sebelah kiri.</li>
+                <li>Ubah <strong>Wireless Password</strong> dengan kata sandi yang baru.</li>
+                <li>Pastikan enkripsi disetel ke <strong>WPA2-PSK</strong>.</li>
+              </ul>
+            </div>
+            
+            <img src="img/password-tplink.jpg" alt="Contoh Pengisian Password" class="rounded-xl shadow-md border border-slate-200 w-full max-w-md" />
+            
+            <p class="text-slate-600">Klik tombol <strong class="bg-slate-200 px-3 py-1.5 rounded text-slate-800 text-sm">SAVE</strong> untuk menyimpan pengaturan kata sandi Anda.</p>
+          </div>
+        </section>
 
-        <article>
-          <h2 class="text-xl font-semibold mb-2">
-            4. Restart Modem (Opsional)
-          </h2>
-          <p>
-            Beberapa modem perlu direstart agar perubahan diterapkan. Bisa lewat
-            menu modem atau dengan mematikan dan menyalakan perangkat.
+        <!-- Langkah 4 -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-black text-lg shrink-0">4</div>
+            <h2 class="text-xl md:text-2xl font-bold text-slate-800">Restart Modem (Opsional)</h2>
+          </div>
+          
+          <p class="text-slate-600 pl-2 md:pl-14 leading-relaxed">
+            Beberapa modem perlu direstart agar perubahan diterapkan. Anda bisa melakukan ini lewat menu modem atau dengan mematikan dan menyalakan perangkat secara fisik.
           </p>
-        </article>
+        </section>
+      </div>
 
-        <article>
-          <h2 class="text-xl font-semibold mb-2">Penutup</h2>
-          <p>
-            Anda telah berhasil mengganti SSID dan password Wi-Fi. Catat
-            perubahan agar tidak lupa.
+      <!-- Penutup & Alert -->
+      <section class="mt-12">
+        <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-6 md:p-8 text-center">
+          <div class="w-16 h-16 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 mb-2">Konfigurasi Selesai!</h2>
+          <p class="text-slate-600 mb-6 max-w-lg mx-auto">
+            Anda telah berhasil mengganti SSID dan password Wi-Fi. Catat perubahan agar tidak lupa.
           </p>
-          <p class="text-red-600 font-semibold">
-            JIKA SETELAH GANTI PASSWORD TIDAK BISA, COBA LUPAKAN WIFINYA
-            TERLEBIH DAHULU
-          </p>
-        </article>
+          
+          <!-- Alert Box -->
+          <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-xl flex gap-3 text-left">
+            <i class="fa-solid fa-triangle-exclamation text-red-500 text-xl shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="font-bold text-red-800">Catatan Penting</h4>
+              <p class="text-red-700 text-sm mt-1 uppercase font-semibold">
+                JIKA SETELAH GANTI PASSWORD TIDAK BISA, COBA LUPAKAN WIFINYA TERLEBIH DAHULU.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
+
     </main>
 
-    <footer class="bg-teal-600 text-center py-4 text-sm text-white">
-      <p>&copy; 2024 Tutorial by Jarvis Network</p>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 border-t border-slate-800">
+      <div class="max-w-3xl mx-auto px-4 flex flex-col items-center gap-2">
+        <div class="flex items-center gap-2 text-brand-500/80 mb-2">
+          <i class="fa-solid fa-network-wired"></i>
+          <span class="font-bold text-sm tracking-widest uppercase text-white/70">Jarvis Network</span>
+        </div>
+        <p class="text-sm">&copy; 2026 Tutorial and Guide. All rights reserved.</p>
+      </div>
     </footer>
+    
   </body>
 </html>
